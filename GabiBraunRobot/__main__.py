@@ -107,8 +107,7 @@ buttons =[[((
 
 
 
-HELP_STRINGS = """
-Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*.
+HELP_STRING = """ Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*.
 
 I'ʍ Cᴀᴩᴛᴀin ᴏf Sᴄᴏuᴛs Rᴇgiʍᴇnᴛ ᴀnd hᴇlᴩ ᴀdʍins ʍᴀnᴀgᴇ ᴛhᴇir grᴏuᴩs wiᴛh ʍy Sᴄᴏuᴛs! Hᴀvᴇ ᴀ lᴏᴏᴋ ᴀᴛ ᴛhᴇ fᴏllᴏwing fᴏr ᴀn idᴇᴀ ᴏf sᴏʍᴇ ᴏf \
 
@@ -205,7 +204,7 @@ def start(update: Update, context: CallbackContext):
     if update.effective_chat.type == "private":
         if len(args) >= 1:
             if args[0].lower() == "help":
-                send_help(update.effective_chat.id, HELP_STRINGS)
+                send_help(update.effective_chat.id, HELP_STRING)
             elif args[0].lower().startswith("ghelp_"):
                 mod = args[0].lower().split("_", 1)[1]
                 if not HELPABLE.get(mod, False):
