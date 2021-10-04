@@ -60,40 +60,51 @@ Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /h
 """
 
 buttons = [
-    [
-        InlineKeyboardButton(
-            text="➕️ ADD GABI TO YOUR GROUP ➕️",url="t.me/Gabi_Braun_Robot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(
-              text="🔐 Command & Help", callback_data="help_back"),
-     
-    ],
-    [     InlineKeyboardButton(
-            text="🎦 H.S.A Group", url="https://telegram.dog/Hindisubsanimes"),
     
-    ],
-    [
-        InlineKeyboardButton(
-            text="📮 Update Channel", url="https://telegram.dog/EldianGabi_UpdateChannel"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="📑 Loges", url="https://t.me/Gabi_Support_Log"),
+        
+    [[
+
+                        InlineKeyboardButton(
+
+                            text="𝔸𝔻𝔻 𝕃𝔼𝕍𝕀 𝕀ℕ 𝕐𝕆𝕌ℝ 𝔾ℝ𝕆𝕌ℙ!",
+
+                            url="t.me/{}?startgroup=true".format(
+
+                                context.bot.username))
+
+                    ],
+
+                     
+
+                        [ InlineKeyboardButton(
+
+                             text="𝕊𝕌ℙℙ𝕆ℝ𝕋 𝔾ℝ𝕆𝕌ℙ",
+
+                             url=f"https://t.me/levi_support_chat"),
+
+                        InlineKeyboardButton(
+
+                             text="𝕃𝕆𝔾 ℂℍ𝔸ℕℕ𝔼𝕃",
+
+                             url="https://t.me/levi_logs")]
+
+                     ,
+
+                     
+
+                         [InlineKeyboardButton(
+
+                             text="𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃",
+
+                             url="https://t.me/levi_updates")
+
+                     ]]))
+    
+ 
           
+     
+  
 
-
-InlineKeyboardButton(
-            text="🐱 SUPPORT", url="https://telegram.dog/GabiHelpSupport"
-        ),
-
-    ],
-    [
-        InlineKeyboardButton(
-                    text="🗄️ Source Code", url="https://github.com/Falco-Grice/GabiBraunRobot"
-        ),
-    ],
-]
 
 
 HELP_STRINGS = """
