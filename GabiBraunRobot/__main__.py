@@ -124,7 +124,7 @@ I'ʍ Cᴀᴩᴛᴀin ᴏf Sᴄᴏuᴛs Rᴇgiʍᴇnᴛ ᴀnd hᴇlᴩ ᴀdʍins 
 
    • in PM: will send you your settings for all supported modules.
 
-   • in a group: will redirect you to pm, with all that chat's settings`""
+   • in a group: will redirect you to pm, with all that chat's settings`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paytm](#) or by contacting @The_Ghost_Hunter\
