@@ -97,8 +97,23 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Gabi Braun]("https://telegra.ph/file/8cab4bb122cf76702b06d.jpg") 
-I'm a Eldian and help admins manage their groups with Some Powerful Titans! `Have a look at the following for an idea of some of the things I can help you with.`"""
+Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*.
+
+I'ʍ Cᴀᴩᴛᴀin ᴏf Sᴄᴏuᴛs Rᴇgiʍᴇnᴛ ᴀnd hᴇlᴩ ᴀdʍins ʍᴀnᴀgᴇ ᴛhᴇir grᴏuᴩs wiᴛh ʍy Sᴄᴏuᴛs! Hᴀvᴇ ᴀ lᴏᴏᴋ ᴀᴛ ᴛhᴇ fᴏllᴏwing fᴏr ᴀn idᴇᴀ ᴏf sᴏʍᴇ ᴏf \
+
+ᴛhᴇ ᴛhings I ᴄᴀn hᴇlᴩ yᴏu wiᴛh.
+
+*Mᴀin* ᴄᴏʍʍᴀnds ᴀvᴀilᴀʙlᴇ:
+
+ • /hᴇlᴩ: PM's yᴏu ᴛhis ʍᴇssᴀgᴇ.
+
+ • /help <module name>: PM's you info about that module.
+
+ • /settings:
+
+   • in PM: will send you your settings for all supported modules.
+
+   • in a group: will redirect you to pm, with all that chat's settings`""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paytm](#) or by contacting @The_Ghost_Hunter\
