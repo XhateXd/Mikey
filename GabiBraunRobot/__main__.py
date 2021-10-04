@@ -53,10 +53,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👩‍💼](https://telegra.ph/file/0ed48df18f4175d61b5d8.jpg) `My name is` *Gabi Braun*
-`I am an Anime Themed group management bot.
-Build by The Ghost Hunter and managed by Falco Grice for Your Telegram Group , I specialize in managing anime and similar themed groups.
-You can find my list of available commands with! Hit` *🔐Commands*   
+Hi {}, My nᴀʍᴇ is {}! 
+I ᴀʍ ᴀn Aniʍᴇ ᴛhᴇʍᴇd grᴏuᴩ ʍᴀnᴀgᴇʍᴇnᴛ ʙᴏᴛ ʙᴀsᴇd ᴏn ᴛhᴇ ᴄhᴀrᴀᴄᴛᴇr [Lᴇvi Aᴄᴋᴇrʍᴀn](https://anilist.co/character/45627/Levi) Frᴏʍ [Aᴛᴛᴀᴄᴋ On Tiᴛᴀn](https://anilist.co/anime/16498/Shingeki-no-Kyojin).
+Builᴛ ʙy [Hᴏrni Sᴇnᴩᴀi](https://t.me/Horni_Senpaii) and [Ninᴇ Mᴀᴛsunᴏ](https://t.me/shadow_slasherh), I sᴩᴇᴄiᴀlizᴇ in ʍᴀnᴀging ᴀniʍᴇ ᴀnd siʍilᴀr ᴛhᴇʍᴇd grᴏuᴩs.
+Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /hᴇlᴩ.
 """
 
 buttons = [
