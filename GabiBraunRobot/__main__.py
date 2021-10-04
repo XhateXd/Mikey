@@ -59,7 +59,7 @@ Builᴛ ʙy [Hᴏrni Sᴇnᴩᴀi](https://t.me/Horni_Senpaii) and [Ninᴇ Mᴀ�
 Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /hᴇlᴩ.
 """
 
-buttons = [
+buttons =
     
         
     [[
