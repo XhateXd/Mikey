@@ -53,10 +53,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👩‍💼](https://telegra.ph/file/0ed48df18f4175d61b5d8.jpg) `My name is` *Gabi Braun*
-`I am an Anime Themed group management bot.
-Build by The Ghost Hunter and managed by Falco Grice for Your Telegram Group , I specialize in managing anime and similar themed groups.
-You can find my list of available commands with! Hit` *🔐Commands*   
+`Hey There!` [✰](https://telegra.ph/file/0ed48df18f4175d61b5d8.jpg) 
+`≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+I am Himiko Toga! Aᴛ Yᴏᴜʀ  Sᴇʀᴠɪᴄᴇ..
+𝔗𝔥𝔢 𝔖𝔱𝔲𝔡𝔢𝔫𝔱 𝔳𝔦𝔩𝔩𝔞𝔫
+𝔣𝔯𝔬𝔪 𝔅𝔬𝔨𝔲 𝔫𝔬 𝔥𝔢𝔯𝔬 𝔄𝔠𝔠𝔡𝔢𝔪𝔦𝔠
+━━━━━━━━━━━━━━━━━━━━━━━━
+Press /help to see all commands
+━━━━━━━━━━━━━━━━━━━━━━━━
+Here with my Knife already
+⦿I am protecting `{}` users
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 """
 
 buttons = [
