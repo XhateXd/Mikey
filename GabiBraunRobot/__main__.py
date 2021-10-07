@@ -68,9 +68,9 @@ Here with my Knife already
 
 buttons =  [
     [
-      InlineKeyboardButton(text="➕ Add TOGA To Your Group",url="t.me/{}?startgroup=true".format(
+      InlineKeyboardButton(text="➕ Add TOGA To Your Group",url="t.me/Toga_himiko_robot?startgroup=true"),
 
-                                Context.bot.username))
+                                
                                     
     ],
     [
