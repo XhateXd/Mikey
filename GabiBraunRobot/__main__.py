@@ -66,42 +66,22 @@ Here with my Knife already
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 """
 
-buttons = [
+buttons =  [
     [
-        InlineKeyboardButton(
-            text="➕️ ADD GABI TO YOUR GROUP ➕️",url="t.me/Gabi_Braun_Robot?startgroup=true"),
+      InlineKeyboardButton(text="➕ Add TOGA To Your Group!",url=f"t.me/{BOT_USERNAME}?startgroup=true")
     ],
     [
-        InlineKeyboardButton(
-              text="🔐 Command & Help", callback_data="help_back"),
-     
-    ],
-    [     InlineKeyboardButton(
-            text="🎦 H.S.A Group", url="https://telegram.dog/Hindisubsanimes"),
-    
+      InlineKeyboardButton(text="⚙️ Support Group", url= "http://t.me/Toga_support"),
+      InlineKeyboardButton(text="🔔Updates Channel",url="https://t.me/toga_updates")
     ],
     [
-        InlineKeyboardButton(
-            text="📮 Update Channel", url="https://telegram.dog/EldianGabi_UpdateChannel"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="📑 Loges", url="https://t.me/Gabi_Support_Log"),
-          
-
-
-InlineKeyboardButton(
-            text="🐱 SUPPORT", url="https://telegram.dog/GabiHelpSupport"
-        ),
-
-    ],
-    [
-        InlineKeyboardButton(
-                    text="🗄️ Source Code", url="https://github.com/Falco-Grice/GabiBraunRobot"
-        ),
+      InlineKeyboardButton(text="📖 COMMANDS ",callback_data ="help_back")
     ],
 ]
 
+    
+     
+     
 
 HELP_STRINGS = """
 `Hey there! My name is` [Gabi Braun]("https://telegra.ph/file/8cab4bb122cf76702b06d.jpg") 
