@@ -71,8 +71,8 @@ buttons =  [
       InlineKeyboardButton(text="➕ Add TOGA To Your Group!",url=f"t.me/{BOT_USERNAME}?startgroup=true")
     ],
     [
-      InlineKeyboardButton(text="⚙️ Support Group", url= "http://t.me/Toga_support"),
-      InlineKeyboardButton(text="🔔Updates Channel",url="https://t.me/toga_updates")
+      InlineKeyboardButton(text="۞Support Group۞", url= "http://t.me/Toga_support"),
+      InlineKeyboardButton(text="✪Updates Channel✪",url="https://t.me/toga_updates")
     ],
     [
       InlineKeyboardButton(text="📖 COMMANDS ",callback_data ="help_back")
