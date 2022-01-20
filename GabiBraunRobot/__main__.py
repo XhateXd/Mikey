@@ -59,7 +59,9 @@ Builᴛ ʙy [Hᴏrni Sᴇnᴩᴀi](https://t.me/Horni_Senpaii) and [Ninᴇ Mᴀ�
 Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /hᴇlᴩ.
 """
 
- buttons = [ [ InlineKeyboardButton( text="ADD ME IN YOUR GROUP ⚡️", url="t.me/{}?startgroup=true".format( context.bot.username ), ), ]
+ buttons = [
+   [
+     InlineKeyboardButton( text="ADD ME IN YOUR GROUP ⚡️", url="t.me/{}?startgroup=true".format( context.bot.username ), ), ]
 
 
 HELP_STRING = """ Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*
