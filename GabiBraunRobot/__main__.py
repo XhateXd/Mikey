@@ -100,13 +100,6 @@ buttons =[[((
 
                      ]]))
     
- 
-          
-     
-  
-
-
-
 HELP_STRING = """ Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*.
 
 I'ʍ Cᴀᴩᴛᴀin ᴏf Sᴄᴏuᴛs Rᴇgiʍᴇnᴛ ᴀnd hᴇlᴩ ᴀdʍins ʍᴀnᴀgᴇ ᴛhᴇir grᴏuᴩs wiᴛh ʍy Sᴄᴏuᴛs! Hᴀvᴇ ᴀ lᴏᴏᴋ ᴀᴛ ᴛhᴇ fᴏllᴏwing fᴏr ᴀn idᴇᴀ ᴏf sᴏʍᴇ ᴏf \
