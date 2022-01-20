@@ -59,46 +59,6 @@ Builᴛ ʙy [Hᴏrni Sᴇnᴩᴀi](https://t.me/Horni_Senpaii) and [Ninᴇ Mᴀ�
 Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /hᴇlᴩ.
 """
 
-buttons =[[((
-    
-        
-    [[
-
-                        InlineKeyboardButton(
-
-                            text="𝔸𝔻𝔻 𝕃𝔼𝕍𝕀 𝕀ℕ 𝕐𝕆𝕌ℝ 𝔾ℝ𝕆𝕌ℙ!",
-
-                            url="t.me/{}?startgroup=true".format(
-
-                                context.bot.username))
-
-                    ],
-
-                     
-
-                        [ InlineKeyboardButton(
-
-                             text="𝕊𝕌ℙℙ𝕆ℝ𝕋 𝔾ℝ𝕆𝕌ℙ",
-
-                             url=f"https://t.me/levi_support_chat"),
-
-                        InlineKeyboardButton(
-
-                             text="𝕃𝕆𝔾 ℂℍ𝔸ℕℕ𝔼𝕃",
-
-                             url="https://t.me/levi_logs")]
-
-                     ,
-
-                     
-
-                         [InlineKeyboardButton(
-
-                             text="𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃",
-
-                             url="https://t.me/levi_updates")
-
-                     ]]))
     
  
           
