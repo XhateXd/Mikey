@@ -1,26 +1,51 @@
-import importlib
 import html
-import time
+import importlib
 import re
+import time
 from sys import argv
 from typing import Optional
 
-from GabiBraunRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
-                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
-                          dispatcher, StartTime, telethn, updater, pgram)
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.error import (
+    BadRequest,
+    ChatMigrated,
+    NetworkError,
+    TelegramError,
+    TimedOut,
+    Unauthorized,
+)
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
+from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
+from telegram.utils.helpers import escape_markdown
+
+from GabiBraunRobot import (
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    SUPPORT_CHAT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    StartTime,
+    dispatcher,
+    pgram,
+    telethn,
+    updater,
+)
+
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from GabiBraunRobot.modules import ALL_MODULES
 from GabiBraunRobot.modules.helper_funcs.chat_status import is_user_admin
 from GabiBraunRobot.modules.helper_funcs.misc import paginate_modules
-from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
-                      Update)
-from telegram.error import (BadRequest, ChatMigrated, NetworkError,
-                            TelegramError, TimedOut, Unauthorized)
-from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
-                          Filters, MessageHandler)
-from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
-from telegram.utils.helpers import escape_markdown
 
 
 def get_readable_time(seconds: int) -> str:
@@ -51,20 +76,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-
 PM_START_TEXT = """
 Hi {}, My nᴀʍᴇ is {}! 
 I ᴀʍ ᴀn Aniʍᴇ ᴛhᴇʍᴇd grᴏuᴩ ʍᴀnᴀgᴇʍᴇnᴛ ʙᴏᴛ ʙᴀsᴇd ᴏn ᴛhᴇ ᴄhᴀrᴀᴄᴛᴇr [Lᴇvi Aᴄᴋᴇrʍᴀn](https://anilist.co/character/45627/Levi) Frᴏʍ [Aᴛᴛᴀᴄᴋ On Tiᴛᴀn](https://anilist.co/anime/16498/Shingeki-no-Kyojin).
 Builᴛ ʙy [Hᴏrni Sᴇnᴩᴀi](https://t.me/Horni_Senpaii) and [Ninᴇ Mᴀᴛsunᴏ](https://t.me/shadow_slasherh), I sᴩᴇᴄiᴀlizᴇ in ʍᴀnᴀging ᴀniʍᴇ ᴀnd siʍilᴀr ᴛhᴇʍᴇd grᴏuᴩs.
 Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /hᴇlᴩ.
 """
-
-    
- 
-          
-     
-  
-
 
 
 HELP_STRING = """ Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*.
@@ -173,7 +190,13 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [
+                            [
+                                InlineKeyboardButton(
+                                    text="⬅️ BACK", callback_data="help_back"
+                                )
+                            ]
+                        ]
                     ),
                 )
 
@@ -346,20 +369,16 @@ def gabi_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="asuna_back")
-                 ]
-                ]
+                [[InlineKeyboardButton(text="Back", callback_data="asuna_back")]]
             ),
         )
     elif query.data == "gabi_back":
         query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            PM_START_TEXT,
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
 
 
@@ -373,21 +392,18 @@ def Source_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
-                 ]
-                ]
+                [[InlineKeyboardButton(text="Go Back", callback_data="source_back")]]
             ),
         )
     elif query.data == "source_back":
         query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            PM_START_TEXT,
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
+
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -660,15 +676,16 @@ def migrate_chats(update: Update, context: CallbackContext):
     raise DispatcherHandlerStop
 
 
-
-
 def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Give Up On Your Dreams And Die](https://telegra.ph/file/24278b0559d1acc8dd30e.mp4)",parse_mode = ParseMode.MARKDOWN ),
+            dispatcher.bot.sendMessage(
+                f"@{SUPPORT_CHAT}",
+                "[Give Up On Your Dreams And Die](https://telegra.ph/file/24278b0559d1acc8dd30e.mp4)",
+                parse_mode=ParseMode.MARKDOWN,
+            ),
 
-       
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -676,7 +693,7 @@ def main():
         except BadRequest as e:
             LOGGER.warning(e.message)
 
-    test_handler = CommandHandler("test", test)
+    CommandHandler("test", test)
     start_handler = CommandHandler("start", start)
 
     help_handler = CommandHandler("help", get_help)
@@ -686,7 +703,9 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(gabi_about_callback, pattern=r"gabi_")
-    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
+    source_callback_handler = CallbackQueryHandler(
+        Source_about_callback, pattern=r"source_"
+    )
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -725,7 +744,7 @@ def main():
     updater.idle()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     pgram.start()
