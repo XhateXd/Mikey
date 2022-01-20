@@ -86,18 +86,37 @@ Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /h
 buttons = [
     [
         InlineKeyboardButton(
-            text="𝔸𝔻𝔻 𝕃𝔼𝕍𝕀 𝕀ℕ 𝕐𝕆𝕌ℝ 𝔾ℝ𝕆𝕌ℙ!",
-            url="https://t.me/SHB_channel_BOT?startgroup=True",
-        )
+            text="➕️ ADD ME TO YOUR GROUP ➕️", url="t.me/My_Asuna_Robot?startgroup=true"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="❗ ABOUT", callback_data="asuna_"),
+        InlineKeyboardButton(text="🔰 COMMANDS", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="𝕊𝕌ℙℙ𝕆ℝ𝕋 𝔾ℝ𝕆𝕌ℙ", url=f"https://t.me/levi_support_chat"
+            text="🤴 OWNER", url="https://telegram.dog/The_Ghost_Hunter"
         ),
-        InlineKeyboardButton(text="𝕃𝕆𝔾 ℂℍ𝔸ℕℕ𝔼𝕃", url="https://t.me/levi_logs"),
     ],
-    [InlineKeyboardButton(text="𝕌ℙ𝔻𝔸𝕋𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃", url="https://t.me/levi_updates")],
+    [
+        InlineKeyboardButton(
+            text="📺 Star Wolrd Entertainment",
+            url="https://telegram.dog/fire_world_entertainment",
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="🗨️ Logis", url="https://t.me/AsunaLogUpdate"),
+        InlineKeyboardButton(
+            text="👥 SUPPORT", url="https://telegram.dog/AsunaRobotSupport"
+        ),
+    ],
+    [
+        InlineKeyboardButton(
+            text="💾 Source Code", url="https://github.com/HuntingBots/AsunaRobot"
+        ),
+    ],
 ]
+
 
 HELP_STRING = """ Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*.
 
