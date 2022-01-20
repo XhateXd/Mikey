@@ -87,7 +87,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text="𝔸𝔻𝔻 𝕃𝔼𝕍𝕀 𝕀ℕ 𝕐𝕆𝕌ℝ 𝔾ℝ𝕆𝕌ℙ!",
-            url="t.me/{}?startgroup=true".format(context.bot.username),
+            url="https://t.me/SHB_channel_BOT?startgroup=True".
         )
     ],
     [
