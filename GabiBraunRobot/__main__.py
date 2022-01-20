@@ -91,7 +91,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="❗ ABOUT", callback_data="asuna_"),
-        InlineKeyboardButton(text="🔰 COMMANDS", callback_data="get_help"),
+        InlineKeyboardButton(text="🔰 COMMANDS", callback_data="HELP_STRINGS"),
     ],
     [
         InlineKeyboardButton(
