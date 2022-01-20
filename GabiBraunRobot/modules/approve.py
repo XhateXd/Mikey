@@ -1,4 +1,3 @@
-
 import html
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update

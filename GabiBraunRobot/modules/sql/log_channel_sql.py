@@ -1,7 +1,8 @@
 import threading
 
-from GabiBraunRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, distinct, func
+
+from GabiBraunRobot.modules.sql import BASE, SESSION
 
 
 class GroupLogs(BASE):
