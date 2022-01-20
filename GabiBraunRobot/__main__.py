@@ -61,7 +61,10 @@ Yᴏu ᴄᴀn find ʍy lisᴛ ᴏf ᴀvᴀilᴀʙlᴇ ᴄᴏʍʍᴀnds wiᴛh /h
 
  buttons = [
    [
-     InlineKeyboardButton( text="ADD ME IN YOUR GROUP ⚡️", url="t.me/{}?startgroup=true".format( context.bot.username ), ), ]
+     InlineKeyboardButton( 
+       text="ADD ME IN YOUR GROUP ⚡️", url="t.me/{}?startgroup=true".format( context.bot.username ),
+     
+),]
 
 
 HELP_STRING = """ Hᴇy ᴛhᴇrᴇ! My nᴀʍᴇ is *{}*
